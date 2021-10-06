@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_first_bank/constants/color_constants.dart';
-
-
+import 'package:my_first_bank/screens/weather_screen.dart';
 
 import 'card_screen.dart';
 import 'home_screen.dart';
@@ -20,7 +19,7 @@ class _BaseScreenState extends State<BaseScreen> {
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     CardScreen(),
-    HomeScreen(),
+    WeatherScreen(),
     HomeScreen(),
   ];
   @override

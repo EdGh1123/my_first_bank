@@ -86,17 +86,18 @@ class HomeScreen extends StatelessWidget {
                 height: 15,
               ),
               ListView.separated(
-                  itemCount: myTransactions.length,
-                  shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
-                  separatorBuilder: (context, index) {
-                    return SizedBox(
-                      height: 10,
-                    );
-                  },
-                  itemBuilder: (context, index) {
-                    return TransactionCard(transaction: myTransactions[index]);
-                  })
+                itemCount: myTransactions.length,
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                separatorBuilder: (context, index) {
+                  return SizedBox(
+                    height: 10,
+                  );
+                },
+                itemBuilder: (context, index) {
+                  return TransactionCard(transaction: myTransactions[index]);
+                }
+              )
             ],
           ),
         ),

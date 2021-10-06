@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_bank/pages/login/login_page.dart';
 import 'package:my_first_bank/screens/base_scren.dart';
+import 'package:my_first_bank/screens/weather_screen.dart';
 
 import 'constants.dart';
 import 'pages/inapp/qr-page.dart';
@@ -24,9 +25,9 @@ class MyApp extends StatelessWidget {
         routes: {
           'WelcomeScreen': (BuildContext context) => WelcomeScreen(),
           'login': (BuildContext context) => LoginPage(),
-           'qr': (BuildContext context) => QRViewExample(),
-           'home1': (BuildContext context) => BaseScreen(),
-
+          'qr': (BuildContext context) => QRViewExample(),
+          'home1': (BuildContext context) => BaseScreen(),
+          'weather': (BuildContext context) => WeatherScreen(),
         },
        theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
